@@ -1,3 +1,15 @@
-<p>
-  user-creation works!
-</p>
+<h1>User Creation Page</h1>
+
+<input type="text" class="form-control" [(ngModel)]="userName">
+<p *ngIf="userName.length > 0 "><span class="important">{{userName}}</span><span class="deprecated">@siliconcentric.com</span></p>
+<p *ngIf="userName.length == 0"><span class="badge-danger">Invalid Username</span> </p>
+
+
+<!-- Another way to do it -->
+<p *ngIf="userName.length > 0; else invalidUsername"><span class="important">{{userName}}</span><span class="deprecated">@siliconcentric.com</span></p>
+<ng-template #invalidUsername>
+  <p><span class="alert-danger">Invalid Username</span></p>
+</ng-template>
+
+<!-- Yet another way to do it (ngClass) -->
+<p *ngIf="userName.length > 0"><span [ngClass] = "{important: true}">{{userName}}</span><span [ngClass] = "{deprecated: true}">.coolschool.com</span> </p>

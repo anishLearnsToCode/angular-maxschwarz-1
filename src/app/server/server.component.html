@@ -1,1 +1,6 @@
-<p>{{'Server'}} is running on {{serverId}} and status is {{serverStatus}} {{getServerStatus(2)}}</p>
+<h1>Server Component</h1>
+
+<p [ngStyle]="{backgroundColor: getColor()}">The current server status is <span [ngStyle] = "{color: getColor()}">{{serverStatus}}</span></p>
+
+<button class="btn-primary btn" style="margin-right: 20px" (click)="startServer()">Start Server</button>
+<button class="btn btn-dark" (click)="stopServer()">Stop Server</button>

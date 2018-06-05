@@ -1,0 +1,6 @@
+.important{
+  color: darkblue;
+}
+.deprecated{
+  color: rgba(100,100,100,0.8);
+}

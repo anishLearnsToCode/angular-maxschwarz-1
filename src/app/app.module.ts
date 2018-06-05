@@ -6,6 +6,7 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { UserCreationComponent } from './user-creation/user-creation.component';
+import { ServerControlComponent } from './server-control/server-control.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { UserCreationComponent } from './user-creation/user-creation.component';
     ServerComponent,
     ServersComponent,
     LoginPageComponent,
-    UserCreationComponent
+    UserCreationComponent,
+    ServerControlComponent
   ],
   imports: [
     BrowserModule,
