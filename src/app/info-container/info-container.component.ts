@@ -17,7 +17,9 @@ export class InfoContainerComponent implements OnInit {
     this.informationShow = !this.informationShow;
     this.buttonText = this.informationShow ? 'Hide Details' : 'Show Details';
     this.counter++;
-    this.counterArray.push(this.counter);
+    // this.counterArray.push(this.counter);
+    this.counterArray.push(new Date());
+    console.log(this.counter);
   }
 
   getColor() {

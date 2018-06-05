@@ -6,5 +6,5 @@
 <p *ngIf="informationShow">My password is toolate </p>
 <p *ngIf="!informationShow">Naaah !!</p>
 
-<span *ngFor="let counter of counterArray" [ngStyle] = "{backgroundColor: getColor()}"
-      [ngClass] = "{'white-color' : isCounterGreaterThan(5)}">{{counter}}</span>
+<div *ngFor="let counter of counterArray; let i = index" [ngStyle] = "{backgroundColor: i >= 4 ? 'blue' : 'white'}"
+      [ngClass] = "{'white-color' : i >= 4}">{{counter}}</div>
