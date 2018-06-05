@@ -1,4 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<button class="btn btn-primary" disabled>Add App Server</button>
+<button class="btn btn-primary" [disabled]="!allowNewServer" id="button-main">Add App Server</button>
 
 <app-server></app-server>
+<p>{{allowNewServer}}</p>
+<p [innerText] = "allowNewServer"></p>
