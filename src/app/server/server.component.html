@@ -1,6 +1,9 @@
-<h1>Server Component</h1>
+<div class="border" style="padding: 30px;">
+  <h1>Server Component</h1>
 
-<p [ngStyle]="{backgroundColor: getColor()}">The current server status is <span [ngStyle] = "{color: getColor()}">{{serverStatus}}</span></p>
+  <p>The current server status is <span [ngStyle] = "{color: getColor()}">{{serverStatus}}</span></p>
+  <p>The current server status is <span [ngClass] = "{border: serverStatus === 'online'}">{{serverStatus}}</span></p>
 
-<button class="btn-primary btn" style="margin-right: 20px" (click)="startServer()">Start Server</button>
-<button class="btn btn-dark" (click)="stopServer()">Stop Server</button>
+  <button class="btn-primary btn" style="margin-right: 20px" (click)="startServer()">Start Server</button>
+  <button class="btn btn-dark" (click)="stopServer()">Stop Server</button>
+</div>
