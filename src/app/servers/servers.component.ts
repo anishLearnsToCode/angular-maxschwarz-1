@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  constructor() { }
+  allowServerConnection = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.allowServerConnection = true;
+      console.log(this.allowServerConnection);
+    }, 2000);
+  }
 
   ngOnInit() {
   }
