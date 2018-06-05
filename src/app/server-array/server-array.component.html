@@ -1,5 +1,7 @@
 <h1>Server Rack</h1>
 
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
+<button type="button" class="btn btn-info" (click)="addServer('new server')">Add Server</button>
+
+<div class="grid">
+  <app-server *ngFor="let server of servers"></app-server>
+</div>

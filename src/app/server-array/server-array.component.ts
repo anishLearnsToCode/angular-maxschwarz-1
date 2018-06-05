@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerArrayComponent implements OnInit {
 
+  servers = ['test server', 'default server', 'rollback server', 'internal testing serever'];
+
+  addServer(serverName: string) {
+    this.servers.push(serverName);
+  }
+
   constructor() { }
 
   ngOnInit() {
