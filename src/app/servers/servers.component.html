@@ -13,8 +13,8 @@ type="text"
 class="form-control"
 (input)="onUpdateServerName($event)">
 
-<p>www.{{ serverCreationStatus}}.coolschool.com</p>
+<p>www.{{ serverName }}.coolschool.com</p>
 
 <!-- 2 way data binding using angular ngModel directive (easier method) -->
 
-<input type="text" class="form-control" [(ngModel)]="serverCreationStatus">
+<input type="text" class="form-control" [(ngModel)]="serverName">

@@ -12,11 +12,11 @@ export class ServersComponent implements OnInit {
   serverName = 'test server';
 
   createServer() {
-    this.serverCreationStatus = 'Server was created ';
+    this.serverCreationStatus = 'Server was created. Server name is ' + this.serverName;
   }
 
   onUpdateServerName(event: Event) {
-    this.serverCreationStatus = event.target.value;
+    this.serverName = event.target.value;
   }
 
   constructor() {
