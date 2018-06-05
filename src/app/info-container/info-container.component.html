@@ -1,3 +1,10 @@
-<p>
-  info-container works!
-</p>
+<h1>Info Container</h1>
+
+<button type="button" class="btn btn-dark" (click)="buttonClick()">{{buttonText}}</button>
+<br>
+
+<p *ngIf="informationShow">My password is toolate </p>
+<p *ngIf="!informationShow">Naaah !!</p>
+
+<span *ngFor="let counter of counterArray" [ngStyle] = "{backgroundColor: getColor()}"
+      [ngClass] = "{'white-color' : isCounterGreaterThan(5)}">{{counter}}</span>
