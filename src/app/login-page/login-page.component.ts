@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
+  username = 'johndoe';
+
+  isValidUserName() {
+    return this.username.length > 0 ;
+  }
+
   constructor() { }
 
   ngOnInit() {
