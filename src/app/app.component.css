@@ -1,3 +1,13 @@
 h1{
   color: rebeccapurple;
 }
+
+.grid{
+  display: grid;
+}
+
+.custom-container{
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
