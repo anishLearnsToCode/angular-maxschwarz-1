@@ -10,6 +10,7 @@ import { ServerControlComponent } from './server-control/server-control.componen
 import { ServerArrayComponent } from './server-array/server-array.component';
 import { InfoContainerComponent } from './info-container/info-container.component';
 import { HeaderComponent } from './header/header.component';
+import { RecipesComponent } from './recipes/recipes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeaderComponent } from './header/header.component';
     ServerControlComponent,
     ServerArrayComponent,
     InfoContainerComponent,
-    HeaderComponent
+    HeaderComponent,
+    RecipesComponent
   ],
   imports: [
     BrowserModule,
