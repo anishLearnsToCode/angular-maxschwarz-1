@@ -9,6 +9,7 @@ import { UserCreationComponent } from './user-creation/user-creation.component';
 import { ServerControlComponent } from './server-control/server-control.component';
 import { ServerArrayComponent } from './server-array/server-array.component';
 import { InfoContainerComponent } from './info-container/info-container.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InfoContainerComponent } from './info-container/info-container.componen
     UserCreationComponent,
     ServerControlComponent,
     ServerArrayComponent,
-    InfoContainerComponent
+    InfoContainerComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
