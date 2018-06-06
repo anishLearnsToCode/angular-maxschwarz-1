@@ -9,6 +9,7 @@ import { UserCreationComponent } from './user-creation/user-creation.component';
 import { ServerControlComponent } from './server-control/server-control.component';
 import { ServerArrayComponent } from './server-array/server-array.component';
 import { InfoContainerComponent } from './info-container/info-container.component';
+<<<<<<< HEAD
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipesListComponent } from './Recipes/recipes-list/recipes-list.component';
@@ -17,6 +18,8 @@ import { RecipieComponent } from './Recipes/recipiesList/recipie/recipie.compone
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingItemComponent } from './shoppingList/shopping-item/shopping-item.component';
 import { ShoppingEditComponent } from './shoppingList/shopping-edit/shopping-edit.component';
+=======
+>>>>>>> parent of 834d82f... crated Header component under app root directory
 
 @NgModule({
   declarations: [
@@ -27,6 +30,7 @@ import { ShoppingEditComponent } from './shoppingList/shopping-edit/shopping-edi
     UserCreationComponent,
     ServerControlComponent,
     ServerArrayComponent,
+<<<<<<< HEAD
     InfoContainerComponent,
     HeaderComponent,
     RecipesComponent,
@@ -36,6 +40,9 @@ import { ShoppingEditComponent } from './shoppingList/shopping-edit/shopping-edi
     ShoppingListComponent,
     ShoppingItemComponent,
     ShoppingEditComponent
+=======
+    InfoContainerComponent
+>>>>>>> parent of 834d82f... crated Header component under app root directory
   ],
   imports: [
     BrowserModule,
