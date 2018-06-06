@@ -12,6 +12,8 @@ import { InfoContainerComponent } from './info-container/info-container.componen
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipesListComponent } from './Recipes/recipes-list/recipes-list.component';
+import { RecipeDetailComponent } from './Recipes/recipe-detail/recipe-detail.component';
+import { RecipieComponent } from './Recipes/recipiesList/recipie/recipie.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { RecipesListComponent } from './Recipes/recipes-list/recipes-list.compon
     InfoContainerComponent,
     HeaderComponent,
     RecipesComponent,
-    RecipesListComponent
+    RecipesListComponent,
+    RecipeDetailComponent,
+    RecipieComponent
   ],
   imports: [
     BrowserModule,
